@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/dist/hamburgers.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"
+        integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/pace-js@latest/pace.min.js"></script>
+</head>
+
+<body class=" body bg-[url('/img/background.jpg')] bg-no-repeat bg-cover bg-center bg-fixed h-screen" id="body">
+
+    <!-- <h1
+        class="title absolute top-[42%] left-[50%] transform translate-x-[-50%] translate-y-[-50%] text-black z-[99999] text-4xl font-bold opacity-0">
+        Burak YABA</h1>
+
+    <div id="preloader" class="w-screen h-screen bg-[#222] fixed grid items-center justify-center">
+        <div
+            class="loading_text tracking-[30px] text-white font-semibold relative top-[-50px] pointer-events-none select-none mb-10 ">
+            LOADING
+        </div>
+    </div> -->
+
+
+    <div id="menu" class="lg:ml-20 ml-5 mt-10 flex flex-row relative items-center">
+        <div class="h-20 w-20 flex  justify-center transition-all duration-100" id="toggle" onclick="expand()">
+            <button class="hamburger hamburger--collapse is-active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="scale-1 h-20 flex flex-row items-center justify-center origin-left transition-all duration-300 space-x-10 lg:space-x-20  font-semibold text-lg"
+            id="items">
+            <a href="#" id="item1" class="flex text-[#fb8500] hover:underline ml-5">
+                <span>Home</span>
+            </a>
+            <a href="/src/about.html" id="item2" class="flex text-[#fb8500] hover:underline">
+                <span>About</span>
+            </a>
+            <a href="#" id="item3" class="flex text-[#fb8500] hover:underline">
+                <span>Experience</span>
+            </a>
+            <a href="#" id="item4" class="flex text-[#fb8500] hover:underline">
+                <span>Education</span>
+            </a>
+            <a href="#" id="item5" class="flex text-[#fb8500] hover:underline">
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+
+    <div id="text" class="mt-[5%] ml-[10%] tracking-widest leading-6">
+        <h1 class="text-white text-4xl font-semibold leading-[100px]">Welcome!</h1>
+        <h2 class="text-3xl text-white font-bold">I AM <span class="auto-input text-[#fb8500]"></span></h2>
+        <p class="mt-5 text-white w-[50%]">I am a professional freelance translator, proofreader, copywriter and a green
+            as grass, self-taught
+            UI/UX
+            designer based in London, England. A born go-getter. I give 100% to every new project I take on. It’s my
+            firm belief that a good challenge is a great way to develop and improve, which is why I make a point of
+            seeking out challenges in the professional realm as well as in my personal life. Take a moment to look
+            around, and contact me directly to learn more.</p>
+        <a href="/src/about.html"
+            class="inline-block mt-7  rounded-md border-2 border-[#fb8500] text-[#fb8500] font-semibold px-7 py-2 no-underline hover:bg-[#fb8500] hover:text-black transition-all duration-300">More
+            About
+            Me</a>
+        <a href="#"
+            class="inline-block mt-7 ml-7 rounded-md border-2 border-[#fb8500]  text-black font-semibold bg-[#fb8500] px-7 py-2 no-underline hover:bg-transparent hover:text-[#fb8500] transition-all duration-300">
+            My Experience</a>
+    </div>
+
+    <div class="grid grid-cols-2 gap-4 mx-5 my-5 auto-cols-max lg:hidden mt-20">
+        <div class="bg-[#343a40] text-center  flex flex-col justify-center">
+            <img src="/icons/user.png" alt="" srcset="" class="mx-auto mt-10 h-14 w-14 ">
+            <p class="text-2xl font-black text-white my-5">ABOUT ME</p>
+        </div>
+        <div class="bg-[#343a40] text-center h-80 flex flex-col justify-center ">
+            <img src="/icons/briefcase.png" alt="" srcset="" class=" mx-auto mt-10 h-14 w-14">
+            <p class="text-2xl font-black text-white my-5">EXPERIENCE</p>
+        </div>
+        <div class="bg-[#343a40] text-center flex flex-col justify-center ">
+            <img src="/icons/contact-us.png" alt="" srcset="" class="mx-auto mt-10 h-14 w-14 ">
+            <p class="text-2xl font-black text-white my-5">CONTACT</p>
+        </div>
+        <div class="bg-[#343a40] text-center h-80 flex flex-col justify-center">
+            <img src="/icons/mortarboard.png" alt="" srcset="" class="mx-auto mt-10 h-14 w-14 ">
+            <p class="text-2xl font-black text-white my-5">EDUCATION</p>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="/src/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typed = new Typed(".auto-input", {
+            strings: ["BURAK YABA", "A TRANSLATOR", "A COPYWRITER", "A PROOFREADER"],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true,
+        })
+    </script>
+</body>
+
+</html>

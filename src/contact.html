@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="/dist/output.css">
+    <link rel="stylesheet" href="/dist/hamburgers.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+</head>
+
+<body class="bg-[#222] mx-[5%]">
+    <div id="menu" class="mt-10 flex flex-row relative items-center lg:hidden ">
+        <div class="h-20 w-20 flex  justify-center transition-all duration-100" id="toggle" onclick="expand()">
+            <button class="hamburger2 hamburger--collapse is-active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="scale-1 h-20 flex flex-row items-center justify-center origin-left transition-all duration-300 space-x-10 lg:space-x-20  font-semibold text-lg"
+            id="items2">
+            <a href="/src/index.html" id="item1" class="flex text-[#fb8500] hover:underline ml-5">
+                <span>Home</span>
+            </a>
+            <a href="/src/about.html" id="item2" class="flex text-[#fb8500] hover:underline">
+                <span>About</span>
+            </a>
+            <a href="#" id="item3" class="flex text-[#fb8500] hover:underline">
+                <span>Experience</span>
+            </a>
+            <a href="#" id="item4" class="flex text-[#fb8500] hover:underline">
+                <span>Education</span>
+            </a>
+            <a href="#" id="item5" class="flex text-[#fb8500] hover:underline">
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <div id="menu" class="m-0 hidden lg:inline flex-col fixed items-center justify-center text-center ">
+
+        <div class="flex justify-center transition-all duration-100  opacity-80" id="toggle" onclick="expand()">
+            <button class="hamburger hamburger--collapse is-active" type="button">
+                <span class="hamburger-box">
+                    <span class="hamburger-inner"></span>
+                </span>
+            </button>
+        </div>
+        <div class="grid grid-cols-1 grid-rows-5 gap-5 scale-1 flex-col origin-top transition-all duration-300 font-semibold text-lg  opacity-80 place-items-center"
+            id="items">
+            <img src="/icons/home.png" alt="" class="h-10 w-10 ">
+            <a href="/src/index.html" id="item1" class="flex hover:underline text-[#fb8500]">
+                <span>Home</span>
+            </a>
+            <img src="/icons/user.png" alt="" class="h-10 w-10">
+            <a href="/src/about.html" id="item2" class="flex  hover:underline text-[#fb8500]">
+                <span>About</span>
+            </a>
+            <img src="/icons/briefcase.png" alt="" class="h-10 w-10">
+            <a href="#" id="item3" class="flex  hover:underline text-[#fb8500]">
+                <span>Experience</span>
+            </a>
+            <img src="/icons/mortarboard.png" alt="" class="h-10 w-10">
+            <a href="#" id="item4" class="flex hover:underline text-[#fb8500]">
+                <span>Education</span>
+            </a>
+            <img src="/icons/contact-us.png" alt="" class="h-10 w-10">
+            <a href="#" id="item5" class="flex  hover:underline text-[#fb8500]">
+                <span>Contact</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="items-center justify-center mt-[5%] lg:mt-20">
+        <h1 class="text-5xl font-black text-white mx-auto text-center">GET <span class="text-[#fb8500]"> IN TOUCH</span>
+        </h1>
+        <p class="text-gray-300 text-center  mt-10 mx-20"> FEEL FREE TO CONTACT ME FOR ALL KIND OF TRANSLATION,
+            TRANSCREATION AND COPYWRITING PROJECTS
+        </p>
+    </div>
+    <div class="lg:hidden">
+        <div class="grid grid-cols-1 text-center mt-10 space-y-5">
+            <div class="mx-auto">
+                <h1 class="text-gray-300">Phone</h1>
+                <div class="flex space-x-3 items-center">
+                    <img class="w-5 h-5" src="/icons/whatsapp.png" alt="" srcset="">
+                    <span class="text-white">+44 7990 965 247</span>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <h1 class="text-gray-300">Email</h1>
+                <div class="flex space-x-3 items-center">
+                    <img class="w-5 h-5" src="/icons/email.png" alt="" srcset="">
+                    <span class="text-white">burakyaba@hotmail.com</span>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <h1 class="text-gray-300">Address</h1>
+                <div class="flex space-x-3 items-center">
+                    <img class="w-5 h-5" src="/icons/pin.png" alt="" srcset="">
+                    <span class="text-white">Flat 15, Barham Court 80A Station Road Cuffley, Potters Bar EN6 4HY
+                    </span>
+                </div>
+            </div>
+            <div class="mx-auto space-y-5">
+                <h1 class="text-gray-300">Social Media</h1>
+                <div class="flex space-x-5">
+
+                    <a href="#"> <img class="w-8 h-8" src="/icons/facebook.png" alt="" srcset=""></a>
+                    <a href="#"><img class="w-8 h-8" src="/icons/instagram.png" alt="" srcset=""></a>
+                    <a href="#"> <img class="w-8 h-8" src="/icons/linkedin.png" alt="" srcset=""></a>
+
+                </div>
+            </div>
+        </div>
+        <form action="" class="my-20">
+            <div class="grid grid-cols-1  space-y-5">
+                <div class="">
+                    <p class="text-gray-300 text-center">If there is anything that you would like to inquire, such as
+                        rates,
+                        etc., fill out
+                        the form below and
+                        I'll get back to you as soon as possible.</p>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa fa-user icon absolute ml-5 text-[#444]"></i>
+                    <input class="pl-12 rounded-full h-10 w-full bg-[#333] border-[1px] text-white" type="text" name=""
+                        id="" placeholder="YOUR NAME" required>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa fa-envelope icon absolute ml-5 text-[#444]"></i>
+                    <input class=" pl-12 rounded-full h-10 w-full bg-[#333] border-[1px] text-white" type="text" name=""
+                        id="" placeholder="YOUR EMAIL" required>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-comments icon absolute mt-2 ml-5 text-[#444]"></i>
+                    <textarea class="pl-12 pt-1 rounded-3xl h-32 w-full bg-[#333] border-[1px] text-white" name="" id=""
+                        cols="30" rows="10" placeholder="YOUR MESSAGE" required></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <div class="mb-3 w-96">
+
+                        <input class="w-full px-3 py-1.5  text-base  font-normal  text-gray-300 bg-[#333] bg-clip-padding border  border-gray-300 rounded-2xl  transition ease-in-out
+                 
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file"
+                            id="formFileMultiple" multiple>
+                    </div>
+                </div>
+                <div class="mt-7">
+                    <a href="#"
+                        class="inline-block  rounded-md border-2 border-[#fb8500] text-[#fb8500] font-semibold px-7 py-2 no-underline hover:bg-[#fb8500] hover:text-black transition-all duration-300">Submit</a>
+                </div>
+            </div>
+        </form>
+    </div>
+    <div class="hidden lg:flex flex-row mx-40 space-x-20 h-[420px]">
+
+        <div class="grid grid-cols-1 text-center mt-10">
+            <div class="mx-auto">
+                <h1 class="text-gray-300">Phone</h1>
+                <div class="flex space-x-3 items-center">
+                    <img class="w-5 h-5" src="/icons/whatsapp.png" alt="" srcset="">
+                    <span class="text-white">+44 7990 965 247</span>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <h1 class="text-gray-300">Email</h1>
+                <div class="flex space-x-3 items-center">
+                    <img class="w-5 h-5" src="/icons/email.png" alt="" srcset="">
+                    <span class="text-white">burakyaba@hotmail.com</span>
+                </div>
+            </div>
+            <div class="mx-auto">
+                <h1 class="text-gray-300">Address</h1>
+                <div class="flex space-x-3 items-center">
+                    <img class="w-5 h-5" src="/icons/pin.png" alt="" srcset="">
+                    <span class="text-white">Flat 15, Barham Court 80A Station Road EN6 4HY
+                    </span>
+                </div>
+            </div>
+            <div class="mx-auto space-y-5">
+                <h1 class="text-gray-300">Social Media</h1>
+                <div class="flex space-x-5">
+
+                    <a href="#"> <img class="w-8 h-8" src="/icons/facebook.png" alt="" srcset=""></a>
+                    <a href="#"><img class="w-8 h-8" src="/icons/instagram.png" alt="" srcset=""></a>
+                    <a href="#"> <img class="w-8 h-8" src="/icons/linkedin.png" alt="" srcset=""></a>
+
+                </div>
+            </div>
+        </div>
+        <form action="" class="my-20">
+            <div class="grid grid-cols-1  space-y-5">
+                <div class="">
+                    <p class="text-gray-300 text-center">If there is anything that you would like to inquire, such as
+                        rates,
+                        etc., fill out
+                        the form below and
+                        I'll get back to you as soon as possible.</p>
+                </div>
+                <div class="flex items-center ">
+                    <i class="fa fa-user icon absolute ml-5 text-[#444]"></i>
+                    <input class="pl-12 rounded-full h-10 w-full bg-[#333] border-[1px] text-white" type="text" name=""
+                        id="" placeholder="YOUR NAME" required>
+                </div>
+                <div class="flex items-center">
+                    <i class="fa fa-envelope icon absolute ml-5 text-[#444]"></i>
+                    <input class=" pl-12 rounded-full h-10 w-full bg-[#333] border-[1px] text-white" type="text" name=""
+                        id="" placeholder="YOUR EMAIL" required>
+                </div>
+                <div class="flex">
+                    <i class="fa fa-comments icon absolute mt-2 ml-5 text-[#444]"></i>
+                    <textarea class="pl-12 pt-1 rounded-3xl h-32 w-full bg-[#333] border-[1px] text-white" name="" id=""
+                        cols="30" rows="10" placeholder="YOUR MESSAGE" required></textarea>
+                </div>
+                <div class="flex justify-center">
+                    <div class="mb-3 w-96">
+
+                        <input class="
+                      w-full
+                      px-3
+                      py-1.5
+                      text-base
+                      font-normal
+                      text-gray-300
+                      bg-[#333] bg-clip-padding
+                      border  border-gray-300
+                      rounded-2xl
+                      transition
+                      ease-in-out
+                 
+                      focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none" type="file"
+                            id="formFileMultiple" multiple>
+                    </div>
+                </div>
+
+                <!-- Custom scripts -->
+                <script type="text/javascript">
+                    const checkbox = document.getElementById("flexCheckIndeterminate");
+                    checkbox.indeterminate = true;
+                </script>
+                <div class="mt-7">
+                    <a href="#"
+                        class="inline-block  rounded-md border-2 border-[#fb8500] text-[#fb8500] font-semibold px-7 py-2 no-underline hover:bg-[#fb8500] hover:text-black transition-all duration-300">Submit</a>
+                </div>
+
+            </div>
+        </form>
+    </div>
+
+
+
+
+    <script src="/src/script.js"></script>
+</body>
+
+</html>
